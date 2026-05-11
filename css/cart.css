@@ -1,0 +1,154 @@
+.cart-left {
+background-color: rgb(145, 189, 189);
+border: rgb(17, 89, 107) 10px solid;
+padding: 50px;
+padding-left: 75px;
+
+display: grid;
+grid-template-columns: 1fr;
+gap: 10px;
+
+height: 500px;
+overflow-y: auto;
+}
+
+.cart-right {
+background-color: rgb(145, 189, 189);
+padding: 50px 0 50px 100px;
+
+display: grid;
+grid-template-columns: 1fr;
+
+
+}
+
+.cart-content {
+  margin-right: 0;
+  margin-left: 0;
+  
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  
+
+
+}
+
+.cart-right p {
+  color: #254347;
+}
+
+.cart-right button {
+  border: #254347 solid 3px;
+  background-color: rgb(123, 246, 255);
+  color: #254347;
+  font-size: 20px;
+  margin-right: 30px;
+  position: relative;
+
+  
+  width: 500px;
+  height: 50px;
+  z-index: 0;
+}
+
+.odkaz-ucet {
+  display: flex;
+}
+
+.cart-right a {
+  text-decoration: none;
+    background-color: rgb(58, 106, 112);
+    border: 3px rgb(0, 238, 255) solid;
+    color: rgb(0, 238, 255);
+    padding: 10px;
+    margin-left: 5px;
+    height: 50px;
+    border-radius: 15px;
+
+    transition: all 100ms;
+}
+
+.cart-right a:hover {
+ background-color: rgb(18, 73, 80);
+}
+
+.cart-right button:hover {
+  color: white;
+  border: white solid 3px;
+  animation: pulse5 1.5s infinite ease-in-out;
+}
+
+.cart-right button::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+background: linear-gradient(to left, #858dff,#4853f1);
+height: 44px;
+width: 0;
+transition: 100ms;
+
+z-index: -1;
+}
+
+.cart-right button:hover::after {
+width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8feeff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3ba0ad;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #286b74;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  ::-webkit-scrollbar {
+  width: 0px;
+}
+
+.cart-content {
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.cart-left {
+padding-left: 130px;
+
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+  width: 0px;
+}
+
+.cart-content {
+  grid-template-columns: 1fr;
+
+}
+
+.cart-left {
+padding-left: 200px;
+
+}
+
+}

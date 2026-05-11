@@ -1,0 +1,160 @@
+.profile-footer {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.profile-content {
+  margin-right: 0;
+  margin-left: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-left {
+  display: grid;
+  gap: 15px;
+  padding: 50px 0px 50px 100px;
+}
+
+.profile-input-div {
+  color: rgb(0, 255, 213);
+  background-color: rgb(56, 113, 121);
+  border: 3px rgb(0, 238, 255) solid;
+
+  padding: 2px;
+  height: 50px;
+  width: 75%;
+
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.profile-input-div>p {
+  width: 150px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  text-align: center;
+}
+
+.profile-input-div>input {
+  color: rgb(0, 255, 213);
+  background-color: rgb(56, 113, 121);
+  border: 3px rgb(0, 238, 255) solid;
+  width: 100%;
+}
+
+.profile-right {
+  color: black;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: center;
+  padding-left: 25%;
+
+  z-index: 0;
+}
+
+.profile-right>img {
+  width: 500px;
+}
+
+
+.profile-right>p {
+  color: rgb(0, 255, 213);
+  background-color: rgb(56, 113, 121);
+  border: 1px rgb(0, 238, 255) solid;
+  border-radius: 20px;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  margin-left: 100px;
+}
+
+.profile-right::after {
+  content: '';
+  width: 10px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+
+  background: linear-gradient(to bottom, rgb(0, 255, 213), rgb(0, 163, 136));
+  border-radius: 20px;
+
+  transition: 200ms;
+}
+
+.profile-right:hover::after {
+  top: 0;
+  border-radius: 0;
+  height: 100%;
+
+}
+
+.profile-right::before {
+  content: '';
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  z-index: -1;
+
+  background: linear-gradient(to right, rgba(15, 211, 245, 0), rgb(31, 127, 139));
+
+
+  transition: 200ms;
+}
+
+.profile-right:hover::before {
+  width: 100%;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .profile-right>img {
+    width: 400px;
+  }
+
+  .profile-right>p {
+    margin-left: 40px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .profile-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .profile-right::after {
+    display: none;
+  }
+
+  .profile-right:hover::after {
+    display: none;
+  }
+
+  .profile-right::before {
+    display: none;
+  }
+
+  .profile-right:hover::before {
+    display: none;
+  }
+
+}

@@ -1,0 +1,43 @@
+.ads-panel {
+    background-color: rgb(19, 19, 19);
+   position: fixed;
+   top: 70px;
+   right: 0;
+   bottom: 0;
+    
+    width: 300px;
+    z-index: 2;
+}
+
+.ads-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.ads-box > a {
+    margin-top: 20px;
+}
+
+.ads-box > a > img {
+    width: 100%;
+    
+}
+
+
+
+@media screen and (max-width: 1200px){
+   .ads-panel {
+    width: 200px;
+   }
+
+  }
+  
+  @media screen and (max-width: 768px){
+        .ads-panel {
+        display: none;
+       }
+  }
+  
+  
