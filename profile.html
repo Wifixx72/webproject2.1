@@ -47,47 +47,55 @@
 
           <div class="profile-input-div">
             <p>Jméno</p>
-            <input type="text">
+            <input type="text" id="name-input">
+            <button id="name-confirm" class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>Příjmení</p>
             <input type="text">
+            <button class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>Email</p>
             <input type="text">
+            <button class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>Heslo</p>
             <input type="text">
+            <button class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>Číslo</p>
             <input type="text">
+            <button class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>Adresa</p>
             <input type="text">
+            <button class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>PSČ</p>
             <input type="text">
+            <button class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>Země</p>
             <input type="text">
+            <button class="confirm-button">&#10004;</button>
           </div>
 
           <div class="profile-input-div">
             <p>Kreditní karta</p>
-            <input type="text">
+            <div class="card-link"> <img class="payment-banks" src="img1/googlepay-button.png" alt=""> <img class="payment-banks" src="img1/applepay-button.png" alt=""> <img class="payment-banks" src="img1/Visa-button.png" alt=""> <img class="payment-banks" src="img1/mastercard-button.png" alt=""> <img class="payment-banks" src="img1/paypal-button.png" alt=""> <img class="paymentmethodsimg" src="img1/payment-button.png" alt=""></div>
           </div>
 
 
@@ -95,7 +103,7 @@
 
         <div class="profile-right">
           <img src="img1/ProfileIcon3.png" alt="">
-          <p>Jméno: </p>
+          <p>Jméno: <span id="name-display"></span> </p>
           <p> Účetní zůstatek</p>
         </div>
         
@@ -132,7 +140,7 @@
     </footer>
 
 
-
+<script src="script/main.js"></script>
 </body>
 
 </html>

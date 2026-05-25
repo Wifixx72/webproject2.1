@@ -42,36 +42,46 @@
 
     </div>
 -->
-    <div class="content cart-content">
-  <div class="cart-left">
+  <div class="content cart-content">
+    <div class="cart-left">
 
-    <div class="item-div">
-      <img src="img1/fnaf-shirt-2.jpg" alt="">
-      <div class="underitem-div">
-        <p>Tričko fnaf <br> 300Kč</p> <button>Add to Cart</button>
+      <div class="item-div">
+        <img src="img1/fnaf-shirt-2.jpg" alt="">
+        <div class="underitem-div">
+          <p>Tričko fnaf <br> 300Kč</p> <button>Remove from cart</button>
+        </div>
       </div>
+
+      <div class="item-div">
+        <img src="img1/gf-figure-2.png" alt="">
+        <div class="underitem-div">
+          <p>Figurka GF <br> 450Kč</p> <button>Remove from cart</button>
+        </div>
+
+      </div>
+
+
+
     </div>
 
-    <div class="item-div">
-      <img src="img1/fnaf-shirt-2.jpg" alt="">
-      <div class="underitem-div">
-        <p>Tričko fnaf <br> 300Kč</p> <button>Add to Cart</button>
+    <div class="cart-right">
+      <div id="card-display">
+        <p>Objednávka:</p>
+        <ul id="cart-items"></ul>
+
       </div>
+
+      <p>Doprava:</p>
+      <div class="odkaz-ucet">
+        <p>údaje: Pro vyplnění údajů k obějdnávce klikněte na tento odkaz</p> <a href="profile.html">Profil účtu</a>
+      </div>
+      <div><p>Součet:</p> <span id="total-price"></span></div>
+      <button>Objednat a zaplatit</button>
     </div>
 
-    
-
+    <!-- <button onclick="addToCart('Tricko WD', 500, 'Tricko-WD')">Add to Cart</button> -->
   </div>
 
-  <div class="cart-right">
-    <p>Objednávka:</p>
-    <p>Doprava:</p>
-    <div class="odkaz-ucet"> <p>údaje: Pro vyplnění údajů k obějdnávce klikněte na tento odkaz</p> <a href="profile.html">Profil účtu</a></div>
-    <div>Součet</div>
-    <button>Objednat a zaplatit</button>
-  </div>
-
-  </div>
 
   <footer class="profile-footer">
     <div class="footerdiv1">
@@ -105,7 +115,7 @@
   </footer>
 
 
-
+  <script src="script/main.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 .profile-footer {
+  height: 400px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -24,13 +25,13 @@
 
   padding: 2px;
   height: 50px;
-  width: 75%;
+  width: 80%;
 
   font-size: 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 4fr 8fr 1fr;
 }
 
 .profile-input-div>p {
@@ -46,6 +47,11 @@
   background-color: rgb(56, 113, 121);
   border: 3px rgb(0, 238, 255) solid;
   width: 100%;
+  transition: all 200ms;
+}
+
+.profile-input-div>input:hover {
+  border-radius: 15px;
 }
 
 .profile-right {
@@ -57,6 +63,7 @@
   gap: 10px;
   align-items: center;
   padding-left: 25%;
+ 
 
   z-index: 0;
 }
@@ -120,9 +127,37 @@
 }
 
 
+.paymentmethodsimg {
+  display: none;
+  height: 40px;
+  cursor: pointer;
+}
 
+.payment-banks {
+  height: 40px;
+  cursor: pointer;
+  margin: 0 5px;
+}
 
+.confirm-button {
+  font-size: 18px;
+  background-color: rgb(56, 113, 121);
+  border: solid 3px rgb(0, 238, 255);
+  color: rgb(0, 238, 255);
+  margin:0 5px;
+  transition: all 200ms;
+}
 
+.confirm-button:hover {
+  border-radius: 15px ;
+  background-color: rgb(0, 238, 255);
+  color: rgb(56, 113, 121);
+}
+
+#name-input {
+  font-size: 18px;
+  padding: 5px;
+}
 
 @media screen and (max-width: 1200px) {
   .profile-right>img {
@@ -131,6 +166,14 @@
 
   .profile-right>p {
     margin-left: 40px;
+  }
+
+  .payment-banks{
+    display: none;
+  }
+
+  .paymentmethodsimg {
+    display: block;
   }
 
 }
@@ -157,4 +200,8 @@
     display: none;
   }
 
+  
+
 }
+
+
